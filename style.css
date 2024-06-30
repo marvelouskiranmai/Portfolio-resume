@@ -1,0 +1,995 @@
+*{
+    margin: 0;
+    font-family:"PT Sans",'Times New Roman', Times, serif;
+    color:white;
+    
+}
+body{
+    background-color: #002865;
+    width: 68.6rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.main{
+    height: 100vh;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+header{
+    padding-left: 8rem;
+    width: 100%;
+    height: 10%;
+    margin-bottom:1.5rem ;
+    padding-top: 1.5rem;
+    position: fixed;
+    top:0;
+    z-index:10;
+    display: flex;
+    align-items: center;
+    font-size:large;
+    background-color: #23467b37;
+}
+.header i:hover{
+    font-size:30px;
+}
+.header i{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    position:fixed;
+    right: 16px;
+    line-height: 60px;
+}
+#menuicon{
+    display: none;
+}
+
+/* .btn_one{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    position:fixed;
+    left: 16px;
+    line-height: 60px;
+}
+.sidebar_menu{
+    position: fixed;
+    left:-350px;
+    height: 100vh;
+    width: 300px;
+    background-color: rgb(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    box-shadow: 0 0 6px gray;
+    transition: all 0.3s linear ;
+}
+.logo{
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    box-shadow: 0 0 6px gray;
+}
+
+.logo h3{
+    position: relative;
+    left:50px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+.btn_two i{
+    color: grey;
+    font-size: 25px;
+    line-height: 60px;
+    position: absolute;
+    left: 275px;
+    opacity: 1;
+    cursor: pointer;
+}
+.menu{
+    color:white;
+    position: absolute;
+    top:80px;
+    width: 100%;
+    
+}
+.menu li{
+    margin-top: 6px;
+    padding: 14px 20px;
+}
+
+.menu li i,a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.menu a{
+    padding-left: 10px;
+}
+#check{
+    display: none;
+}
+
+.menu li:hover{
+    box-shadow: 0 0 6px grey;
+}
+
+.btn_one i:hover{
+    font-size:30px;
+}
+.btn_two i:hover{
+    font-size:30px;
+}
+
+.social_media i:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+#check:checked ~ .sidebar_menu{
+    left:0;
+}
+
+#check:checked ~ .btn_one{
+    opacity:0;
+} */
+.header .heading{
+    width:20rem;
+    text-decoration: none;
+}
+.bar,.active{
+    padding-right:4rem;
+    text-decoration: none;
+}
+.home{
+    margin-left: 8rem;
+    width: inherit;
+    margin-top: 6rem;
+    
+}
+#bar1{
+    color:rgb(15, 138, 186);
+    text-decoration:underline;
+}
+.bar:hover{
+    color:rgb(15, 138, 186);
+    text-decoration:underline;
+}
+
+.home{
+    display: flex;
+    justify-content: space-evenly;
+}
+.details{
+    padding-top: 3rem;
+    height: 30rem;
+    width:30rem;
+    /* border: 1px white solid;  */
+    padding-left: 2rem;
+    line-height: 2rem;
+}
+
+.photo{
+    height: 15rem;
+    width:15rem;
+    background-image: url(profile.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    animation: rise 3s linear 0s infinite alternate;
+    box-shadow: 1px 1px 5px skyblue;
+    border: 2px solid skyblue;
+}
+@keyframes rise{
+    0%{
+        margin-top:30px;
+    }
+    100%{
+        margin-top:50px;
+    }
+}
+ .anima{
+    /* display: inline-block; */
+
+    height: 3rem;
+    width: 30rem;
+    animation: spin 3s linear 0s infinite alternate;
+    overflow: hidden;
+}
+@keyframes spin{
+    0%{
+        width:10px;
+    }
+    100%{
+        width:200px;
+    }
+}
+.ani{
+    display: flex;
+}
+
+.anima h2{
+    /* color:rgb(6, 90, 235); */
+    color:rgb(15, 138, 186);
+}
+
+.icons i{
+    color:rgb(15, 138, 186);
+    display: flex;
+    align-items: center;
+    padding: 0.65rem;
+}
+.icons a{
+    text-decoration: none;
+}
+.linkedin,.github{
+    height:2.5rem;
+    width:2.5rem;
+    border-radius: 100%;
+    border: 2px solid rgb(15, 138, 186);;
+    margin-top: 1rem;
+}
+.linkedin i{
+    /* padding-top: 0.5rem;
+    padding-left: 0.6rem; */
+    font-size: larger;
+}
+.github i{
+    /* padding-top: 0.55rem;
+    padding-left: 0.55rem; */
+    font-size: larger;
+}
+.linkedin:hover{
+  background-color: rgb(15, 138, 186);
+  
+}
+.github:hover{
+    background-color: rgb(15, 138, 186);
+    
+  }
+.linkedin,.icons i:hover{
+    color:white;
+     
+}
+.icons{
+    display: flex;
+    width:6rem;
+    /* border: 1px solid white; */
+    justify-content: space-between; 
+}
+.cv,.readmore,#submit{
+    background-color: rgb(15, 138, 186) ;
+    color:#002865;
+    font-size:large;
+    width:10rem;
+    border-radius: 30px;
+    box-shadow: 1px 1px 5px  rgb(15, 138, 186);
+    border: 1px solid rgb(15, 138, 186) ;
+    margin-top: 1rem;
+}
+.cv a{
+    text-decoration: none;
+}
+.page2{
+    overflow: hidden;
+    background-color: #264169;
+    height: 85rem;
+    width: 68.6rem;
+    padding-left: 10rem;
+    padding-top: 10rem;
+
+}
+.photo1{
+    background-image: url(profile.jpg);
+    background-size: cover;
+    height:20rem;
+    width:20rem;
+    border:2px solid  rgb(15, 138, 186);
+    margin-top: 3rem; 
+    animation: shift1 3s linear 0s 2 normal; 
+}
+@keyframes shiftl{
+    0%{
+        margin-left: -150px;
+    }
+    100%{
+        margin-left: 0px;
+    }
+}
+
+.info{
+    height:20rem;
+    width:25rem;
+    margin-top: 3rem;
+    padding: 3rem;
+    line-height: 1.5rem;
+    animation: shift2 3s ease-in 0s 2 normal; 
+}
+@keyframes shift2{
+    0%{
+        margin-left: 50px;
+    }
+    100%{
+        margin-left: 0px;
+    }
+}
+.firstline{
+    width:55rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.experience table{
+    height: 20rem;
+    width:50rem;
+}
+.experience td{
+    padding: 2rem;
+    width: 20rem;
+    height: 0.25rem;
+}
+.skillicon{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50rem;
+
+}
+.skillicon i{
+    height: 5rem;
+    width:5rem;
+    font-size: 3rem;
+    /* border: 1px solid white; */
+    justify-content: center;
+    padding-left: 3rem;
+    padding-top: 1rem;
+}
+.skillicon i h5{
+    font-size: small;
+}
+.skills{
+    animation: shift 20s linear 0s infinite normal; 
+}
+@keyframes shift{
+    0%{
+        margin-left: -150px;
+    }
+    100%{
+        margin-left: 1000px;
+    }
+}
+.page3{
+        overflow: hidden;
+        background-color: #23467b;
+        height: 65rem;
+        width: 68.6rem;
+        padding-left: 10rem;
+        padding-top: 10rem;
+    
+}
+.card1,.card2,.card3,.card4{
+    height:25rem;
+    width:20rem;
+    line-height: 2rem;
+    border: 2px solid whitesmoke;
+    border-radius: 20px;
+    padding: 1rem;
+    margin-right: 3rem;
+    margin-top: 2rem;
+}
+.card1 a,.card2 a,.card3 a,.card4 a{
+    text-decoration: none;
+}
+.card1 img,.card2 img,.card3 img,.card4 img{
+    width:20rem;
+    height:10rem;
+    border-radius: 20px;
+}
+
+.card1:hover{
+    box-shadow: 0px 0px 8px skyblue;
+}
+.card1 a:hover{
+    text-decoration: underline;
+}
+.card2:hover{
+    box-shadow: 0px 0px 8px skyblue;
+}
+.card2 a:hover{
+    text-decoration: underline;
+}
+.card3:hover{
+    box-shadow: 0px 0px 8px skyblue;
+}
+.card3 a:hover{
+    text-decoration: underline;
+}
+.card4:hover{
+    box-shadow: 0px 0px 8px skyblue;
+}
+.card4 a:hover{
+    text-decoration: underline;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    width:65rem;
+}
+.page4{
+    overflow: hidden;
+    background-color: #264169;
+    height: 50rem;
+    width: 68.6rem;
+    padding-left: 10rem;
+    padding-top: 10rem;
+}
+.scroll{
+    animation: shift3 5s linear 0s 2 normal;
+}
+
+.page4 table{
+    height: 20rem;
+    width:50rem;
+}
+.page4 td{
+    padding: 2rem;
+    width: 25rem;
+    height: 0.25rem;
+}
+.page4 img{
+    height: 3rem;
+    width:3rem;
+}
+@keyframes shift3{
+    0%{
+        margin-left: 600px;
+    }
+    100%{
+        margin-left: 0px;
+    }
+}
+.page5{
+    overflow: hidden;
+    background-color: #23467b;
+    height: 40rem;
+    width: 68.6rem;
+    padding-left: 10rem;
+    padding-top: 10rem;
+}
+#name,#email{
+    height: 3rem;
+    width:15rem;
+    background-color:#02024d;
+    border: none;
+    padding-left: 2rem;
+    margin-right: 0.5rem;
+    border-radius: 10px;
+    margin-top: 3rem;
+}
+.contactform{
+   
+    height:30rem;
+    width: 38rem;
+    padding-left: 5rem;
+    margin-left: 8rem;
+}
+
+#text{
+    height: 10rem;
+    width:35rem;
+    margin: 2rem;
+    margin-left: 0;
+    background-color:#02024d;
+    border: none;
+    border-radius: 10px;
+    padding-top: 0rem;
+}
+#submit{
+    margin-left: 12rem;
+}
+.page5 h2{
+    animation: shift5 5s linear 0s infinite normal;
+}
+@keyframes shift5{
+    0%{
+        color:white;
+    }
+    100%{
+         color: rgb(15, 138, 186)
+    }
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+}
+.footer-text{
+    font-size: 1.6rem;
+}
+.footer-iconTop{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem 1rem;
+    border-radius: .8rem;
+    transition: .5s ease;
+    background-color:rgb(15, 138, 186) ;
+
+}
+.footer-iconTop a:hover{
+    box-shadow: 0 0 1rem rgb(15, 138, 186);
+}
+
+.footer-iconTop a i{
+    font-size: 2.4rem;
+    color: #002865;
+}
+.contactform h2{
+    padding-left: 10.5rem;
+    font-size:2.5rem;
+}
+
+@media(max-width:1200px){
+    #menuicon{
+        display: none;
+   }
+   header{
+    padding-left:1rem;
+    margin-left: 0;
+
+}
+    html{
+        font-size: 90%;
+    }
+    .home{
+        margin-left: 5rem;
+    }
+    .footer{
+        margin-right:10rem;
+    }
+    .contactform h2{
+       padding-left: 8rem;
+    }
+    .contactform{
+        padding-right: 15rem;
+        margin-left: 5rem;
+    }
+
+}
+@media (max-width:991px) {
+    
+    html{
+        font-size: 90%;
+    }
+    header{
+        padding-left:1rem;
+        margin-left: 0;
+        justify-content: space-evenly;
+        width: 105%;
+   
+    }
+    header .heading{
+        width: 1rem;
+    }
+    nav a{
+       padding-right: 8rem;
+       width: 1rem;
+    }
+    #menuicon{
+         display: none;
+    }
+    .home{
+        margin-left: 0.1rem;
+        font-size: larger;
+    }
+    .details{
+        margin-right:15rem;
+    }
+    .info{
+        margin-right:10rem; 
+        padding-top: 0rem;
+    }
+    .page2{
+        padding-top: 3rem;
+        padding-left: 5rem;
+        font-size: large;
+        height: 95rem;
+    }
+    .page3{
+        padding-left:5rem ;
+
+    }
+    .experience table{
+        height: 20rem;
+        width:40rem;
+    }
+    .card1,.card2,.card3,.card4{
+        margin-right:4rem ;
+    }
+    .page4{
+        padding-left: 5rem;
+    }
+    .page5{
+        padding-left: 5rem;
+    }
+    .footer{
+       padding-left: 3rem;
+    }
+    .contactform h2{
+       padding-left: 12rem;
+    }
+    .contactform{
+        padding-right: 20rem;
+        margin-left: 3rem;
+    }
+
+}
+@media (max-width:768px) {
+    html{
+        font-size: 85%;
+    }
+    /* header{
+        padding-left: 3rem;
+    } */
+    /* header .heading{
+        width: 8rem;
+    } */
+    #menuicon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background-color:#02024d;
+        border-top:0.1rem solid rgba(0,0,0,0.2);
+        box-shadow:0 0.5rem 1rem  rgba(0,0,0,0.2) ;
+        display: none;
+    }
+    .navbar.active{
+        display: block;
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+    .home{
+        margin-left: 0.075rem;
+        font-size: larger;
+        margin-right: 5rem;
+    }
+    .ani h2{
+        width: 8rem;
+    }
+    .anima h2{
+        width: 10rem;
+    }
+    
+    .photo{
+        margin-left:0.25rem;
+        animation: rise2 5s linear 0s infinite alternate;
+    }
+    @keyframes rise2{
+        0%{
+            margin-top:30px;
+        }
+        100%{
+            margin-top:100px;
+        }
+    }
+    .info{
+        width: 30rem;
+        padding-top: 0rem;
+        margin-right:13rem;
+        padding-left:0rem ;
+        margin-left: 2rem;
+    }
+    .details{
+        width: 25rem;
+        padding-top: 2rem;
+        margin-right:18rem;
+        padding-left:0rem ;
+        margin-left: 0.25rem;
+    }
+    .page2{
+        padding-top: 3rem;
+        padding-left: 5rem;
+        font-size: large;
+        height: 105rem;
+    }
+    
+    .experience h1{
+        margin-top: 3rem;
+        margin-left:0.25rem;
+    }
+    .experience table{
+        margin-left: 0.01rem;
+        margin-right: 10rem;
+    }
+    .experience table{
+        height: 20rem;
+        width:40rem;
+    }
+    .experience td{
+        padding: 2rem;
+        width: 15rem;
+        height: 0.25rem;
+    }
+    .page3{
+        padding-left:4rem ;
+        height: 85rem;
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card1,.card2,.card3,.card4{
+        height:31.5rem;
+        width:15rem;
+        line-height: 2.5rem;
+        border: 2px solid whitesmoke;
+        border-radius: 20px;
+        padding: 1rem;
+        margin-right: 3rem;
+        margin-top: 2rem;
+    }
+    .card1 img,.card2 img,.card3 img,.card4 img{
+        width:15rem;
+        height:10rem;
+        border-radius: 20px;
+    }
+    .page4{
+        padding-left:3rem;
+    }
+    .page4 table{
+        height: 25rem;
+        width:40rem;
+    }
+    .page4 td{
+        padding: 2rem;
+        width: 15rem;
+        height: 0.25rem;
+    }
+    .page5{
+        padding-left: 1rem;
+    }
+    .footer{
+       padding-left:0.1rem;
+    }
+    .contactform h2{
+       padding-left: 11rem;
+    }
+    .contactform{
+        padding-right: 30rem;
+        margin-left: 1rem;
+    }
+    .footer-iconTop{
+        margin-right: 15rem;
+        margin-top: 1rem;
+        margin-left: 20rem;
+    }
+
+}
+@media(max-width:600px){
+    html{
+        font-size: 85%;
+    }
+    .main{
+        height: 60rem;
+    }
+    /* .details{
+        padding-left: 5rem;
+    } */
+    .firstline{
+        flex-direction: column;
+        align-items: center;
+    }
+    .info{
+        padding-left: 10rem;
+    }
+    
+    /* header{
+        padding-left: 3rem;
+    }
+    header .heading{
+        width: 8rem;
+    } */
+    .home{
+        margin-right:10rem;
+        font-size: larger;
+        margin-right: 5rem;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .ani h2{
+        width: 8rem;
+    }
+    .anima h2{
+        width: 10rem;
+    }
+    
+    .photo{
+        margin-right: 25rem;
+        margin-left: 2rem;
+        animation:rise3 3s linear 0s infinite alternate;
+    }
+    @keyframes rise3{
+        0%{
+            margin-left:20px;
+        }
+        100%{
+            margin-left:0px;
+        }
+    }
+    .photo1{
+        margin-right:20rem ;
+        margin-left: 0.095rem;
+    }
+    .info{
+        width: 30rem;
+        padding-top: 0rem;
+        margin-right:18rem;
+        padding-left:0rem ;
+        margin-left: 2rem;
+    }
+    .details{
+        width: 25rem;
+        padding-top: 2rem;
+        margin-right:20rem;
+        padding-left:0rem ;
+        margin-left: 0.095rem;
+        line-height: 2.5rem;
+    }
+    .page2{
+        padding-top: 3rem;
+        padding-left: 2rem;
+        font-size: large;
+        height: 125rem;
+    }
+    
+    .experience h1{
+        margin-top: 3rem;
+        margin-left:0.25rem;
+    }
+    .experience table{
+        margin-left: 0.01rem;
+        margin-right: 10rem;
+    }
+    .experience table{
+        height: 25rem;
+        width:35rem;
+    }
+    .experience td{
+        padding: 2rem;
+        width: 10rem;
+        height: 0.25rem;
+    }
+    .page3{
+        padding-left:2rem ;
+        height: 130rem;
+        width: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 4rem;
+    }
+
+    .card1,.card2,.card3,.card4{
+        height:25rem;
+        width:22rem;
+        line-height: 2.5rem;
+        border: 2px solid whitesmoke;
+        border-radius: 20px;
+        padding: 1rem;
+        margin-left: 6rem;
+        margin-top: 1rem;
+    }
+    .card1 img,.card2 img,.card3 img,.card4 img{
+        width:21.85rem;
+        height:10rem;
+        border-radius: 20px;
+    }
+    .page4{
+        padding-top: 5rem;
+        padding-left:5rem;
+        height: 65rem;
+    }
+    .page4 table{
+        height: 30rem;
+        width:30rem;
+    }
+    .page4 td{
+        padding: 2rem;
+        width: 13rem;
+        height: 0.25rem;
+    }
+    .page5{
+        padding-left: 0.3rem;
+        height: 45rem;
+        padding-top: 5rem;
+    }
+    .footer{
+        padding-top: 8rem;
+        padding-left:0.1rem;
+    }
+
+    .contactform{
+        padding-right: 30rem;
+        margin-left: 1rem;
+    }
+    .footer-iconTop{
+        margin-right: 15rem;
+        margin-top: 1rem;
+        margin-left: 20rem;
+    }
+    .footer-text{
+        font-size: large;
+        padding-left: 3rem;
+    }
+    #name,#email{
+        height: 3rem;
+        width:25rem;
+        padding-left: 1rem;
+        margin-right: 0.5rem;
+        border-radius: 10px;
+        margin-top: 3rem;
+    }
+    .contactform{
+       
+        height:30rem;
+        width: 12rem;
+        padding-left: 1rem;
+        margin-left: 6rem;
+    }
+    .contactform h2{
+        padding-left: 6rem;
+        padding-right: 0.5rem;
+        width: 5rem;
+    }
+    #text{
+        height: 10rem;
+        width:25.5rem;
+        margin: 2rem;
+        margin-left: 0;
+        background-color:#02024d;
+        border: none;
+        border-radius: 10px;
+        padding-top: 0rem;
+    }
+    #submit{
+        margin-left: 8rem;
+    }
+    
+}
+
+.show-scroll{
+    bottom:3rem;
+}
+.active-link{
+   color: white;
+}
+.active-link::after{
+    width:30%;
+}
+.hide{
+    display: none;
+}
+.linkedin:hover + .hide {
+    display: block;
+    color: white;
+  }
+  .github:hover + .hide {
+    display: block;
+    color: white;
+  }
